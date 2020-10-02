@@ -1,1 +1,3 @@
-# dot_neomutt
+# neomutt dotfiles
+
+My settings for neomutt.
