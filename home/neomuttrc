@@ -6,7 +6,7 @@ set spoolfile="`pass show server/gsx | grep spoolfile | cut -d ' ' -f2`"
 set folder="`pass show server/gsx | grep folder | cut -d ' ' -f2`"
 set record="+Sent"
 set postponed="+Drafts"
-set trash="+Deleted Items"
+set trash="+Trash"
 
 # TLS settings
 set certificate_file="~/.local/share/neomutt/certificates"
