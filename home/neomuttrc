@@ -1,9 +1,9 @@
 # imap settings
 # set mailboxpaths
-set imap_user="`pass show server/gsx | grep imap_user | cut -d ' ' -f2`"
-set imap_pass="`pass show server/gsx | grep imap_pass | cut -d ' ' -f2`"
-set spoolfile="`pass show server/gsx | grep spoolfile | cut -d ' ' -f2`"
-set folder="`pass show server/gsx | grep folder | cut -d ' ' -f2`"
+set imap_user="`gpg -qd ~/.config/neomutt/gsx.gpg | grep imap_user | cut -d ' ' -f2`"
+set imap_pass="`gpg -qd ~/.config/neomutt/gsx.gpg | grep imap_pass | cut -d ' ' -f2`"
+set spoolfile="`gpg -qd ~/.config/neomutt/gsx.gpg | grep spoolfile | cut -d ' ' -f2`"
+set folder="`gpg -qd ~/.config/neomutt/gsx.gpg | grep folder | cut -d ' ' -f2`"
 set record="+Sent"
 set postponed="+Drafts"
 set trash="+Trash"
